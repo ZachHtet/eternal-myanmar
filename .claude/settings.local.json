@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx next lint --quiet)",
+      "Bash(cd /Users/zachhtet/Documents/Coding\\\\ Projects/Claude\\\\ Code/Figma\\\\ MCP/brand-guidelines && npx tsc:*)",
+      "Bash(lsof:*)",
+      "Bash(cd:*)",
+      "Bash(curl:*)",
+      "WebFetch(domain:www.figma.com)",
+      "WebSearch",
+      "WebFetch(domain:developers.figma.com)",
+      "Bash(claude mcp add:*)",
+      "Bash(claude mcp:*)",
+      "mcp__figma__get_screenshot",
+      "mcp__figma__get_design_context",
+      "Bash(npm run dev)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "n8n-mcp"
+  ]
+}

@@ -1,24 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Brand Guidelines - Redo
+
+This is a brand guidelines website built with Next.js and Tailwind CSS, implementing a design from Figma.
+
+## Design Implementation
+
+This project implements a comprehensive brand guidelines page for "Redo" - a financial correction and optimization service. The design includes:
+
+- **Sticky Navigation Sidebar** - Quick access to all sections with numbered links
+- **Hero Section** - Large branded header area
+- **Brand Strategy Section** - Company mission and vision
+- **Personality Section** - Brand voice, tone, and sample copy
+- **Additional Sections** - Logo, Color, Typography, and Art Direction (placeholders)
+
+## Tech Stack
+
+- **Next.js 16** - React framework with App Router
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Utility-first styling
+- **Rethink Sans Font** - Custom Google Font matching Figma design
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 

@@ -1,26 +1,297 @@
 @import "tailwindcss";
 
+@theme {
+  --font-family-inter: 'Inter', sans-serif;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #2c2825;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family-inter);
+}
+
+/* Custom CSS classes from Figma design */
+.content-stretch {
+  align-content: stretch;
+}
+
+.css-g0mm18 {
+  box-sizing: border-box;
+  display: flex;
+}
+
+.css-ew64yg {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.css-4hzbpn {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Typography styles from Figma */
+@layer base {
+  h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.1;
+    letter-spacing: -1.2px;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 40px;
+      letter-spacing: -1.6px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 60px;
+      letter-spacing: -2.4px;
+    }
+  }
+
+  h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: -0.88px;
+  }
+
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 26px;
+      letter-spacing: -1.04px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: 30px;
+      letter-spacing: -1.2px;
+    }
+  }
+
+  h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: -0.22px;
+  }
+
+  p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: -0.15px;
+  }
+
+  a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+  }
+}
+
+@layer components {
+  .heading-1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.1;
+    letter-spacing: -1.2px;
+  }
+
+  @media (min-width: 768px) {
+    .heading-1 {
+      font-size: 40px;
+      letter-spacing: -1.6px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .heading-1 {
+      font-size: 60px;
+      letter-spacing: -2.4px;
+    }
+  }
+
+  .heading-2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: -0.88px;
+  }
+
+  @media (min-width: 768px) {
+    .heading-2 {
+      font-size: 26px;
+      letter-spacing: -1.04px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .heading-2 {
+      font-size: 30px;
+      letter-spacing: -1.2px;
+    }
+  }
+
+  .heading-2-bold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: -0.88px;
+  }
+
+  @media (min-width: 768px) {
+    .heading-2-bold {
+      font-size: 26px;
+      letter-spacing: -1.04px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .heading-2-bold {
+      font-size: 30px;
+      letter-spacing: -1.2px;
+    }
+  }
+
+  .heading-3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: -0.22px;
+  }
+
+  .paragraph {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: -0.15px;
+  }
+
+  .paragraph-bold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: -0.15px;
+  }
+
+  .caption {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+  }
+
+  .caption-2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.2;
+    letter-spacing: -0.13px;
+  }
+
+  .label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.2;
+    letter-spacing: -0.13px;
+  }
+
+  .link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+  }
+
+  .display {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: -0.2px;
+  }
+
+  .color-code {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 7px;
+    line-height: 1.2;
+    letter-spacing: -0.07px;
+  }
+
+  .color-code p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  @media (min-width: 480px) {
+    .color-code {
+      font-size: 10px;
+      letter-spacing: -0.1px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .color-code {
+      font-size: 13px;
+      letter-spacing: -0.13px;
+    }
+  }
+
+  .font-display {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+  }
+
+  @media (min-width: 480px) {
+    .font-display {
+      font-size: 40px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .font-display {
+      font-size: 48px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .font-display {
+      font-size: 54px;
+    }
+  }
 }
