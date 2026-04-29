@@ -601,7 +601,7 @@ export default function Home() {
                     {/* Green Background */}
                     <StaggerItem className="bg-[#18ae54] rounded-[8px] flex items-center justify-center px-[40px] md:px-[80px] py-[16px] w-full">
                       <img
-                        src="/images/Eternal Logo - Primary-green.svg"
+                        src="/images/Eternal Logo - Primary-Green.svg"
                         alt="Logo on green background"
                         className="h-[43px] w-auto"
                       />
